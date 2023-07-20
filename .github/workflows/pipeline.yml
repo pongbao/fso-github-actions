@@ -18,13 +18,13 @@ jobs:
         with:
           node-version: "16"
       - name: Install dependencies on frontend
-        working-directory: flight-diary-frontend
-        run: npm ci
+        working-directory: ./flight-diary-frontend
+        run: npm install
       - name: Install dependencies on backend
-        working-directory: flight-diary-backend
-        run: npm ci
+        working-directory: ./flight-diary-backend
+        run: npm install
       - name: Build app
-        working-directory: flight-diary-backend
+        working-directory: ./flight-diary-backend
         run: npm run build:ui
 
   tag_release:
