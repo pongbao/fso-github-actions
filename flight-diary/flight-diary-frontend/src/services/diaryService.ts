@@ -1,7 +1,7 @@
 import axios from "axios";
 import { DiaryEntry, NewDiaryEntry } from "../types";
 
-const baseUrl = "http://localhost:8080/api/diaries";
+const baseUrl = "https://flight-diary-app.fly.dev/api/diaries";
 
 export const getAllEntries = () => {
   return axios
