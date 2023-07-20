@@ -10,7 +10,7 @@ on:
 
 jobs:
   simple_deployment_pipeline:
-    name: Lint, build, test
+    name: Lint and build(Sample only)
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
@@ -23,9 +23,6 @@ jobs:
       - name: Install dependencies on backend
         working-directory: flight-diary/flight-diary-backend
         run: npm install
-      - name: Create build folder
-        working-directory: flight-diary/flight-diary-backend
-        run: mkdir build
       - name: Build app
         working-directory: flight-diary/flight-diary-backend
         run: npm run build:ui
