@@ -10,7 +10,7 @@ on:
 
 jobs:
   simple_deployment_pipeline:
-    name: Lint and build(Sample only)
+    name: Lint and build (Sample only)
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
